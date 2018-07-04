@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: "node:carbon"
+    steps:
+      - run:
+          name: check env
+          command: node --version && npm version
